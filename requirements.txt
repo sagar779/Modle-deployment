@@ -9,7 +9,7 @@ Babel==2.12.1
 backcall==0.2.0
 beautifulsoup4==4.12.2
 bleach==6.0.0
-boltons @ file:///croot/boltons_1677628692245/work
+boltons==23.0.0
 brotlipy==0.7.0
 certifi==2023.7.22
 cffi==1.15.1
@@ -18,7 +18,6 @@ click==8.1.7
 cmake==3.27.4.1
 colorama==0.4.6
 comm==0.1.4
-conda @ file:///croot/conda_1692724491024/work
 conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
 conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
 contourpy==1.1.0
