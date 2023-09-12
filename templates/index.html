@@ -6,12 +6,23 @@
     <title>My first webpage</title>
 
     <style>
+        form {
+            padding: 10px; /* Add padding to the form */
+        }
         body{
+            padding: 50px;
             text-align: center;
         }
         button{
             background-color: red;
             color: white;
+            margin-top: 20px;
+        }
+
+        .large-button {
+            width: 150px; /* Set the desired width */
+            height: 50px; /* Set the desired height */
+            font-size: 16px; /* Optionally, adjust the font size */
         }
     </style>
 </head>
@@ -19,11 +30,11 @@
 <body bgcolor="aqua">
     <h1>Email Spam Classifier</h1>
     <form method="post" action="/predict">
-        <textarea  rows="20" cols="50" name="content" placeholder="Enter your email here"
+        <textarea  rows="20" cols="70" name="content" placeholder="Enter your email here"
         autocomplete="off" > {{email}} </textarea><br>
         <div>
-            <button type="submit">Check</button>
-            <button type="reset" style="color: aliceblue;"> <a href="/">Reset</a></button>
+            <button type="submit" class="large-button">Check</button>
+            <button type="reset" class="large-button"> <a href="/">Reset</a></button>
         </div>
     </form>
     {% if prediction==1 %} 
